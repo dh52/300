@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Numbers</title>
+  <title>Numbers and Strings</title>
   <meta charset="UTF-8">
-  <link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
-                                               
+  <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css">
 </head>
   
 <body>
   <header>
-    <h1>Enter Number</h1>
+    <h1>Numbers and Strings</h1>
   </header>
-  <img class="main" src="images/numbers-t2.jpg" alt="numbers">
+  <img class="main" src="images/stress.jpg" alt="numbers">
 
   <form>
     <label>Please enter a number </label>
@@ -20,6 +19,7 @@
   </form>
   
     <input type="submit" onclick="showInput();">
+    <button id='reset-button' type="reset" value="Reset" >Reset</button>
   
     <p><label>Number count:</label>
     <span id='count'></span></p>
@@ -30,7 +30,10 @@
     <p><label>Average:</label>
     <span id='average'></span></p>
   
-    <button id='reset-button' type="reset" value="Reset" >Reset</button>
+    <p><label>Concatenated String:</label>
+    <span id='concatenate'></span></p>
+  
+    
   
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script src="javascript/script.js"></script>
