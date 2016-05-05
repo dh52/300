@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>map</title>
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="stylesheets/styles.css">
+</head>
+<body>
+  <div id="map">
+  </div>
+  
+  <div>
+    <form name="info">
+      <label>Latitude</label>
+      <input type="text" id="lat">
+      <br>
+      <br>
+      <label>Longitude</label>
+      <input type="text" id="lng">
+      <br>
+      <br>
+      <label>Zoom</label>
+      <input type="text" id="zoom">
+      <br>
+      <br>
+      <input type="button" value="MapIt" onclick="moveTo()" />   
+    </form>
+  </div>
+  
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?callback=initMap" 
+          async defer></script>
+  <!--<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>-->
+
+  <script src="javaScript/script.js"></script>
+</body>
+</html>
