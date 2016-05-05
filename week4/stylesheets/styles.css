@@ -1,0 +1,39 @@
+#map {
+  height: 400px;
+  width: 500px;
+  background-color: #CCC;
+  margin-left: 2rem;
+  margin-top: 2rem;
+  margin: 2rem;
+  
+}
+
+html {
+  background-color: #8fc3fa;
+  margin:auto;
+  width: 80%;
+  font-family: 'Josefin Sans', sans-serif;
+}
+body {
+  background-color: #d1cfcc;
+}
+
+H1 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 3rem;
+  color: gray;
+  text-align: left;
+  margin-left: 2rem;
+}
+form {
+  margin: 2rem;
+}
+label {
+  margin: 2rem;
+}
+input {
+  margin-left: 2rem;
+}
+button {
+  margin: 2rem;
+}
