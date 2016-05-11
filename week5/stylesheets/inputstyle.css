@@ -1,0 +1,9 @@
+thead {
+  color:whitesmoke;
+  background-color: darkblue}
+tbody {
+  color:black;
+}
+table, th, td {
+    border: 1px solid darkblue;
+}
