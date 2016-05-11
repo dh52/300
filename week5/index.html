@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Inputs</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="stylesheets/inputstyle.css">
+</head>
+<body>
+  <form>
+    <table>
+      <thead>
+        <tr>
+          <th>Control Type</th>
+          <th>Control</th>
+          <th>Value Entered</th>
+        </tr>
+      </thead>
+  <tbody>
+    <tr>
+      <td>input type="checkbox"</td>
+      <td> 
+         <input id="checkboxInput" type="checkbox" value="checked"/>
+     </td>
+     <td id="checkboxOutput"></td>
+    </tr>
+    <tr>
+      <td>input type="radio"</td>
+      <td>  
+        <input type="radio" name="rad" value="one" onclick="update(this);"/> one<br>
+        <input type="radio" name="rad" value="two" onclick="update(this);"/> two<br>
+        <input type="radio" name="rad" value="three" onclick="update(this);"/> three   
+      </td>
+      <td id="radiocheck"></td>
+    </tr>
+    <tr>
+      <td>input type="text"</td>
+      <td><input id="textInput" type="text"></td>
+      <td id="textOutput"></td>
+    </tr>
+    <tr>
+      <td>textarea</td>
+      <td><textarea id="textareaInput" rows="5" cols="40"></textarea></td>
+      <td id="textareaOutput"></td>
+    </tr>
+    <tr>
+      <td>select</td>
+      <td>
+        <select id="selectInput" name="select">
+          <option name="place" value="first">first</option>
+          <option name="place" value="second">second</option>
+          <option name="place" value="third">third</option>
+        </select>
+      </td>
+      <td id="selectOutput"></td>
+    </tr>
+  </tbody>
+    
+  </table>
+  
+ </form>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script type="text/javascript" src="javascript/input.js"> </script>
+</body>
+</html>
