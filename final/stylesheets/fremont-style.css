@@ -112,8 +112,11 @@ footer {
   height: 100%;
   width: 100%;
   margin: 1rem;
+  opacity: 1.0;
 }
-
+.catagory:hover {
+  opacity: 0.8;
+}
 a {
   text-decoration: none;
 }
