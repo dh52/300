@@ -25,9 +25,7 @@ header {
 .logo {
   width: 30%;
   height: 30%;
-  margin: 1rem;  
-  
-  
+  margin: 1rem; 
 }
 
 ul {
@@ -199,5 +197,16 @@ li.sidenav a.active {
 
 li.sidenav a:hover:not(.active) {
     color: darkred};
-    
+}
+.formLead {
+  line-height: 3rem;
+}
+#map {
+  height: 400px;
+  width: 500px;
+  background-color: #CCC;
+  margin-left: 2rem;
+  margin-top: 2rem;
+  margin: 2rem;
+  
 }
