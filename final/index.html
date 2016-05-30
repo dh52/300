@@ -10,26 +10,34 @@
     <img class="logo" src="images/FremontAnalytical-logo.png" alt="Fremont Analytical logo">
   </header>
   <nav>
+    <div id="navbar">
       <ul>
-        <li class="navhead"><a class="active" href="index.html">Home</a></li>
-        <li class="navhead"><a href="services.html">Services</a></li>
-        <li class="navhead"><a href="documents.html">Documents</a></li>
-        <li class="navhead"><a href="client.html">Client Area</a></li>
-        <li class="navhead" style="float:right"><a href="contact.html">Contact</a></li>
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="documents.html">Documents</a></li>
+        <li><a href="client.html">Client Area</a></li>
+        <li style="float:right"><a href="contact.html">Contact</a></li>
       </ul>
+    </div>
   </nav>
    <p>Fremont Analytical Inc. is a full service environmental laboratory located in the Fremont neighborhood in Seattle, WA. Fremont Analytical offers a full range of analytical services including organic, inorganic and general chemistry analyses for soil, water and air.</p>
     <div class="section group">
 	   <div class="col span_1_of_4">
-         <img class="catagory" src="images/organic2.png" alt="organics">
+         <a href="organics.html">
+          <img class="catagory" src="images/organic2.png" alt="organics">
+         </a>
 	   </div>
 	   <div class="col span_1_of_4">
-         <img class="catagory" src="images/inorganics.png" alt="inorganics">
+         <a href="inorganics.html">
+          <img class="catagory" src="images/inorganics.png" alt="inorganics">
+         </a>
       </div>
       <div class="col span_1_of_4">
-        <img class="catagory" src="images/air2.png" alt="air">
+        <a href="air.html">
+          <img class="catagory" src="images/air2.png" alt="air">
+        </a>
 	   </div>
-      <div class="col span_1_of_4">
+      <div id="tool" class="col span_1_of_4">
 	     
           <p class="side">CLIENT TOOLS</p>
           <a class="side" href="">Request Pick-Up</a><br><br>
@@ -45,13 +53,19 @@
       
     <div class="section group">
 	<div class="col span_1_of_4">
-	   <img class="catagory" src="images/storm2.png" alt="Storm Water">
+      <a href="storm.html">
+	   <img class="catagory" id="storm" src="images/storm2.png" alt="Storm Water">
+      </a>
 	</div>
 	<div class="col span_1_of_4">
+      <a href="drinking.html">
 	   <img class="catagory" src="images/drinking2.png" alt="Drinking Water">
+      </a>
 	</div>
 	<div class="col span_1_of_4">
+      <a href="chemistry.html">
 	   <img class="catagory" src="images/chemistry2.png" alt="General Chemistry">
+      </a>
 	</div>
 
   </div>
@@ -79,6 +93,6 @@
     <a href="https://www.facebook.com/fremontanalyticalinc/"><img class="icon" src="images/facebook.png" alt="facebook"></a> 
     <img id="nelac" align=right class="nelac" src="images/nelac.png" alt="Nelac logo">
   </footer>
-
+      <script src="javascript/script.js"></script>
 </body>
 </html>

@@ -25,9 +25,7 @@ header {
 .logo {
   width: 30%;
   height: 30%;
-  margin: 1rem;
-  
-  
+  margin: 1rem; 
 }
 
 ul {
@@ -40,7 +38,7 @@ ul {
 
 li {
     float: left;
-    border-right:1px solid #bbb;
+    
 }
 
 li:last-child {
@@ -55,7 +53,7 @@ li a {
     text-decoration: none;
 }
 
-li a:hover:not(.active) {
+#navbar ul li a:hover:not(.active) {
     background-color: #293845;
 }
 
@@ -71,6 +69,7 @@ footer {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
+
 }
 
 
@@ -111,14 +110,18 @@ footer {
   height: 100%;
   width: 100%;
   margin: 1rem;
+  opacity: 1.0;
 }
-
+.catagory:hover {
+  opacity: 0.8;
+}
 a {
   text-decoration: none;
 }
 .side {
   margin-left: 2rem;
   color: #293845;
+  font-size: 1rem;
 }
 .section-name {
   margin-left: 2rem;
@@ -135,6 +138,75 @@ a {
 /*#nelac {
   margin: 5rem 3rem 0rem 0rem;
 }*/
+h1 {
+  color: #293845;
+  padding-left: .5rem;
+}
+h2 {
+  padding-left: .5rem;
+}
 h3 {
+  padding-left: .5rem;
   color: darkred;
+}
+h4 {
+  padding-left: .5rem;
+}
+p {
+  padding-left: .5rem;
+  font-size: 1rem;
+}
+#tools {
+  display:block;
+}
+#organic-table {
+  padding-top: 1.2rem;
+}
+td {
+  font-size: 1rem;
+  padding-left: .5rem;
+  padding-top: .5rem;
+  padding-bottom: .5rem; 
+  padding-right: 1rem;
+}
+a.side:hover{color: darkred}
+th {
+  text-align: left;
+  padding-left: .5rem;
+}
+/*sidenav*/
+ul.sidelist {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: white;
+}
+
+li.sidenav a {
+    display: block;
+    color: #000;
+    padding: 8px 0 8px 16px;
+    text-decoration: none;
+}
+
+li.sidenav a.active {
+    color: #293845;
+    
+}
+
+li.sidenav a:hover:not(.active) {
+    color: darkred};
+}
+.formLead {
+  line-height: 3rem;
+}
+#map {
+  height: 400px;
+  width: 500px;
+  background-color: #CCC;
+  margin-left: 2rem;
+  margin-top: 2rem;
+  margin: 2rem;
+  
 }
