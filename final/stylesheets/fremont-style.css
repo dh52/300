@@ -202,8 +202,8 @@ li.sidenav a:hover:not(.active) {
   line-height: 3rem;
 }
 #map {
-  height: 400px;
-  width: 500px;
+  height: 420px;
+  width: 650px;
   background-color: #CCC;
   margin-left: 2rem;
   margin-top: 2rem;
