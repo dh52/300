@@ -30,3 +30,60 @@ function moveTo() {
 
   map.panTo(panPoint);
      }
+
+$('#create-submit').off();
+$('#create-submit').on( 'click', function( evt ) {
+  
+  var baseUrl = 'https://shielded-sea-3725.herokuapp.com/data-api/';
+  var collection = 'dhaugen'
+  var firstName = $('#firstName').val();
+  var lastName = $('#lastName').val();
+  var eMail = $('#eMail').val();
+  var compName = $('#compName').val();
+  var proManager = $('#proManager').val();
+  var phoneNum = $('#phoneNum').val();
+  var pickAdd = $('#pickAdd').val();
+  var pickAdd2 = $('#pickAdd2').val();
+  var cityName = $('#cityName').val();
+  var stateName = $('#stateName').val();
+  var zipCode = $('#zipCode').val();
+  var couName = $('#couName').val();
+  var numCool = $('#numCool').val();
+  var comNum = $('#comNum').val();
+  var specIns = $('#specIns').val();
+  
+    evt.preventDefault( );
+  
+  $.ajax ( baseUrl + collection,
+  {
+    method: 'POST',
+    data: {
+      firstName: firstName,
+      lastName: lastName,
+      eMail: eMail,
+      compName: compName,
+      proManager: proManager,
+      phoneNum: phoneNum,
+      pickAdd: pickAdd,
+      pickAdd2: pickAdd2,
+      cityName: cityName,
+      stateName: stateName,
+      zipCode: zipCode,
+      couName: couName,
+      numCool: numCool,
+      comNum: comNum,
+      specIns: specIns
+    },
+    
+    success: logCreateResult,
+    error: logAjaxError
+    } );
+  } );
+  
+function logCreateResult( data ) {
+  console.log( 'Data Received: ', data );
+}
+
+function logAjaxError( jqXHR, textStatus, errorThrown ) {
+  console.log( 'AJAX error. Status:', textStatus, 'error:', errorThrown);
+  }
