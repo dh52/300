@@ -22,14 +22,7 @@ function initMap() {
   } );
   }
 
-function moveTo() {
-  var panPoint = new google.maps.LatLng(document.getElementById("lat").value,
-                                        document.getElementById("lng").value);
-  zoomVal = document.getElementById("zoom").value; 
-  map.setZoom(zoomVal);     
 
-  map.panTo(panPoint);
-     }
 
 $('#create-submit').off();
 $('#create-submit').on( 'click', function( evt ) {
@@ -52,6 +45,10 @@ $('#create-submit').on( 'click', function( evt ) {
   var comNum = $('#comNum').val();
   var specIns = $('#specIns').val();
   
+  var email = $('#create-email').val();
+  var password = $('#create-password').val();
+  var confirm = $('#create-confirm-password').val();
+  
     evt.preventDefault( );
   
   $.ajax ( baseUrl + collection,
@@ -73,6 +70,7 @@ $('#create-submit').on( 'click', function( evt ) {
       numCool: numCool,
       comNum: comNum,
       specIns: specIns
+      
     },
     
     success: logCreateResult,
@@ -87,3 +85,9 @@ function logCreateResult( data ) {
 function logAjaxError( jqXHR, textStatus, errorThrown ) {
   console.log( 'AJAX error. Status:', textStatus, 'error:', errorThrown);
   }
+
+$(document).ready(function(){
+    $("#submitform ").submit(function(){
+        alert("Form submitted");
+    });
+});
