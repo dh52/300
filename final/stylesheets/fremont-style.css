@@ -208,5 +208,7 @@ li.sidenav a:hover:not(.active) {
   margin-left: 2rem;
   margin-top: 2rem;
   margin: 2rem;
-  
+}
+#forms {
+  background-color: #f7f7f8;
 }

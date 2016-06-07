@@ -1,5 +1,6 @@
 var map;
 var zoomVal = 16;
+  
 function initMap() {
   var mapDiv = document.getElementById('map');
   
@@ -23,12 +24,16 @@ function initMap() {
   }
 
 
+$('#submitform').on( 'click', submitForm );
 
-$('#create-submit').off();
-$('#create-submit').on( 'click', function( evt ) {
+//$('#submitform').off();
+//$('#submitform').on( 'click', function( evt ) {
+ function submitForm( evt ) { 
   
+  alert("Your form has been submitted. Thank you");
   var baseUrl = 'https://shielded-sea-3725.herokuapp.com/data-api/';
   var collection = 'dhaugen'
+  
   var firstName = $('#firstName').val();
   var lastName = $('#lastName').val();
   var eMail = $('#eMail').val();
@@ -76,8 +81,8 @@ $('#create-submit').on( 'click', function( evt ) {
     success: logCreateResult,
     error: logAjaxError
     } );
-  } );
-  
+  }
+
 function logCreateResult( data ) {
   console.log( 'Data Received: ', data );
 }
@@ -86,8 +91,8 @@ function logAjaxError( jqXHR, textStatus, errorThrown ) {
   console.log( 'AJAX error. Status:', textStatus, 'error:', errorThrown);
   }
 
-$(document).ready(function(){
-    $("#submitform ").submit(function(){
-        alert("Form submitted");
-    });
-});
+//$(document).ready(function(){
+   // $("#submitform").submit(function(){
+    //    alert("Form submitted");
+    //});
+//});
