@@ -213,3 +213,9 @@ li.sidenav a:hover:not(.active) {
 #forms {
   background-color: #f7f7f8;
 }
+.sideH4 {
+  margin-left: 1.5em;
+}
+.alignH4 {
+  margin-left: .75em;
+}
